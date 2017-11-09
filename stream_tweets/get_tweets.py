@@ -119,7 +119,7 @@ class TweetStream():
         """
         Class method to filter the stream according to supplied keywords
         """
-        self.stream.filter(track = self.keywords)
+        self.stream.filter(track = self.keywords ,languages=["en"])
         
     def pull_tweets(self):
         """
@@ -145,12 +145,12 @@ class TweetStream():
 
 # In[3]:
 
-keywords = ["startupchile","#startupchile","@startupchile"]
+keywords = [":)",":("]
 access_token = "532638082-iNySbHCk2edMlXj2pVGBXYyazAiL0AI8DkXPUgC5"
 access_token_secret = "IjRJ8xxHJjjO3mCHDtort52tqXnbsa5UsdA96UDfMsSC1"
 consumer_key = "lqSn67SkXzUqxTS3WBTeTPaQN"
 consumer_secret = "d6FKfgJeAPFfkBPprxOrA9Dlm3Ls2UEb0d7H1Oljh0d3mZdYK0"
-tweet_path = '/Users/jurajkapasny/Data/StartupChile/'
+tweet_path = '/Users/jurajkapasny/Data/tweets/'
 NUM_TWEETS = float("Inf") #max number of tweets to pull
 if __name__ == '__main__':
 
@@ -164,9 +164,4 @@ if __name__ == '__main__':
     twitter_stream.pull_tweets()
 #     except:
 #         print "TwitterAPI connection crashed"
-
-
-# In[ ]:
-
-#Start-Up Chile
 

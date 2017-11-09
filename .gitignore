@@ -1,4 +1,6 @@
 *.pyc
-.ipynb_checkpoints
+*.ipynb_checkpoints
+#pickle
+*.p
 
 .DS_Store

@@ -26,7 +26,6 @@ class ScrapeSME:
         except IOError:    
             # Empty link list if no data are on the disk
             self.scraped_links = []
-        self.scraped_links = []
     
     def find_body(self, soup = None):
         if soup is None:
