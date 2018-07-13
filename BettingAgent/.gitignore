@@ -1,0 +1,10 @@
+#data
+
+*.csv
+*.json
+*.xml
+
+#jupyter
+*.pyc
+*.ipynb_checkpoints/
+
